@@ -1,0 +1,24 @@
+#' Data simulated for model selection under WGEE framework for missing longitudinal data under the mechanism of missing at random and drop-out.
+#'
+#'
+#' @docType data
+#'
+#' @usage data(wgeesimdata)
+#'
+#' @format An object of class \code{"list"}
+#' \describe{
+#'  \item{y}{The outcomes generated from Bernoulli distribution with three repeated measurements from each subject. The data is longitudinal dropout and missing at random.}
+#'  \item{x}{A full covariate matrix. The first column corresponds to the intercept; the second column contains time-independent continuous-scale variable x1; the third column contains a doctor-visit variable x2; the third column contains time-independent binary-scale variable x3.}
+#'  \item{x_mis}{A covariate matrix for missing data model. The first column corresponds to the intercept; the second column contains continuous variable x_mis1.}
+#'  \item{id}{A vector indicating subject id.}
+#'  \item{obs_ind}{A vector indicating observations for each record: 1 for observed records, and 0 for unobserved records.}
+#' }
+#' @references This data set was artificially created for the ELCIC package.
+#' @keywords datasets
+#' @examples
+#'
+#' data(wgeesimdata)
+#' wgeesimdata$y
+#'
+"wgeesimdata"
+
